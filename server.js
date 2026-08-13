@@ -1,9 +1,11 @@
 "use strict";
 
 const express = require("express");
+const cors = require("cors");
 const { evaluate } = require("./policy");
 
 const app = express();
+app.use(cors());
 app.use(express.json({ limit: "1mb" }));
 
 app.get("/", (_req, res) => {
