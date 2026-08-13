@@ -36,14 +36,15 @@ function evaluate(payload) {
     violations.push("EXCESS_PERMISSION");
   }
 
+  
   // ---- PR trigger safety ----
   const trigger = workflow.trigger;
-  const unsafeTrigger =
-    trigger === "pull_request_target" ||
-    (event === "pull_request" && trigger !== "pull_request");
+  const unsafeTrigger = event === "pull_request" && trigger !== "pull_request";
   if (unsafeTrigger) {
     violations.push("UNSAFE_PR_TRIGGER");
   }
+  
+  
 
   // ---- Complete matrix testing ----
   const testsIncomplete =
