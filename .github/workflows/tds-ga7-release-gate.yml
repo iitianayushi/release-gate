@@ -25,7 +25,6 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-        run: npm ci
 
       - name: Run release-gate policy tests
         run: npm test
