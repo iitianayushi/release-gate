@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: "20"
 
-      - name: TDS identity: 23f1000931@ds.study.iitm.ac.in
+      - name: "TDS identity: 23f1000931@ds.study.iitm.ac.in"
         run: echo "TDS identity: 23f1000931@ds.study.iitm.ac.in"
 
       - name: Install dependencies
