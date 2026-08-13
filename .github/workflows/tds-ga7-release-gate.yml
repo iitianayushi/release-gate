@@ -23,6 +23,8 @@ jobs:
         run: 'echo "TDS identity: 23f1000931@ds.study.iitm.ac.in"'
 
       - name: Install dependencies
+        run: npm install
+      
         run: npm ci
 
       - name: Run release-gate policy tests
