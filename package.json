@@ -1,0 +1,14 @@
+{
+  "name": "release-gate",
+  "version": "1.0.0",
+  "description": "Deterministic policy endpoint deciding whether a GitHub Actions run may promote a container image.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
